@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <title>Quizz Programação</title>
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <script src="src/javascript/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Quizz de programação</h1>
+    </header>
+    <!--    SCORE BOARD     -->
+    <section>
+        <div id="score-container" class="hide">
+            <h2>Parabéns!</h2>
+            <p id="display-score"><span>90</span>%</p>
+            <p>Você acertou <span id="correct-answers">0</span> de <span id="questions-qty">10</span>perguntas</p>
+            <button id="restart">Refazer o Quizz</button>
+        </div>
+    </section>
+    <!--    QUIZZ CONTAINER -->
+    <section>
+        <div id="quizz-container">
+            <p id="question">
+                <span id="question-number">1</span> - <span id="question-text">Qual é a unidade de medida para métros?</span>
+            </p>
+        <div id="answers-box">
+        <button><span class="btn-letter">a</span><span class="question-answer">m</span></button>
+        <button><span class="btn-letter">b</span><span class="question-answer">km</span></button>
+        <button><span class="btn-letter">c</span><span class="question-answer">ms</span></button>
+        <button><span class="btn-letter">d</span><span class="question-answer">r</span></button>
+        </div>
+        </div>
+    </section>
+
+    <!--template de resposta-->
+    <button class="answer-template hide"><span class="btn-letter">d</span><span class="question-answer">r</span></button>
+</body>
+</html>
